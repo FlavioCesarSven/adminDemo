@@ -18,7 +18,7 @@ import { ProgressComponent } from './dashboard/pages/progress/progress.component
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    DashboardModule
+    DashboardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

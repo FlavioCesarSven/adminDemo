@@ -7,18 +7,25 @@ import { Grafica1Component } from './pages/grafica1/grafica1.component';
 import { HomeComponent } from './pages/home/home.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 
+import { FormsModule } from '@angular/forms';
+import { ComponentModule } from './components/component.module';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
     ProgressComponent,
     Grafica1Component,
     HomeComponent,
-    InicioComponent
+    InicioComponent,
   ],
   imports: [
     CommonModule,
     SharedModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    FormsModule,
+    ComponentModule,
+    NgChartsModule
+
   ],exports:[
     SharedModule,
   ]
