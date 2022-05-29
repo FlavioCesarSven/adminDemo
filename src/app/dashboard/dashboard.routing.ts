@@ -12,7 +12,7 @@ const routes: Routes = [
     {path: 'inicio', component: InicioComponent },
     {path: 'progress', component: ProgressComponent },
     {path: 'grafica1', component: Grafica1Component },
-    {path: '*', redirectTo: 'inicio', pathMatch:'full'},
+    {path: '**', redirectTo: 'inicio', pathMatch:'full'},
   ]},
 
 
