@@ -1,17 +1,13 @@
 <div class="row">
   <div class="col-4">
-    <div class="card">
-      <div class="card-body">
-            <div style="display: block">
-              <h3>Sales </h3>
-              <canvas
-                baseChart
-                [data]="doughnutChartData"
-
-                [type]="doughnutChartType">
-              </canvas>
-            </div>
-      </div>
-    </div>
+      <app-dona [title]="'Cursos Letras'" [doughnutChartLabels] = "datablabelsn1"
+      [doughnutChartData]= "datacharn1"></app-dona>
+  </div>
+  <div class="col-4">
+      <app-dona></app-dona>
+  </div>
+  <div class="col-4">
+      <app-dona [title]="'Cursos Numeros'" [doughnutChartLabels] = "datablabelsn2"
+      [doughnutChartData]= "datacharn2"></app-dona>
   </div>
 </div>

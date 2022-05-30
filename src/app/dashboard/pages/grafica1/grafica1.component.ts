@@ -9,32 +9,37 @@ import { ChartData, ChartEvent, ChartType} from 'chart.js';
 })
 export class Grafica1Component implements OnInit {
 
-  constructor() { }
 
-  ngOnInit(): void {
-  }
-
-  public doughnutChartLabels: string[] = [ 'Download Sales', 'In-Store Sales', 'Mail-Order Sales' ];
-  public doughnutChartData: ChartData<'doughnut'> = {
-    labels: this.doughnutChartLabels,
+  datablabelsn1: string[] = [ "comunicacion", "cta", "Religión"];
+  datacharn1: ChartData<'doughnut'> = {
+    labels: this.datablabelsn1,
     datasets: [
-      { data: [ 350, 450, 100 ],
-        backgroundColor: ['#00821C','#09DB36','#024D0F'],
+      { data: [ 450, 280, 100 ],
+        backgroundColor: ['#BF4024','#cccccc','#000000'],
         hoverBackgroundColor: ['#00821C','#09DB36','#024D0F'] },
       // { data: [ 50, 150, 120 ] },
       // { data: [ 250, 130, 70 ] }
     ]
   };
-  public doughnutChartType: ChartType = 'doughnut';
 
-  // events
-  public chartClicked({ event, active }: { event: ChartEvent, active: {}[] }): void {
-    console.log(event, active);
+  datablabelsn2: string[] = [ "algebra", "geometria", "trigonometria"];
+  datacharn2: ChartData<'doughnut'> = {
+    labels: this.datablabelsn2,
+    datasets: [
+      { data: [ 600, 480, 80 ],
+        backgroundColor: ['#1E79B8','#B8971E','#9028B4'],
+        hoverBackgroundColor: ['#00821C','#09DB36','#024D0F'] },
+      // { data: [ 50, 150, 120 ] },
+      // { data: [ 250, 130, 70 ] }
+    ]
+  };
+
+
+  constructor() { }
+
+  ngOnInit(): void {
   }
 
-  public chartHovered({ event, active }: { event: ChartEvent, active: {}[] }): void {
-    console.log(event, active);
-  }
 
 
 }
