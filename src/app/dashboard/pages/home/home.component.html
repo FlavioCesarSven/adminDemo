@@ -1,1 +1,19 @@
-<router-outlet></router-outlet>
+<div id="main-wrapper">
+  <app-header></app-header>
+  <app-sidebar></app-sidebar>
+
+  <div class="page-wrapper">
+    <div class="container-fluid">
+      <app-breadcumbs></app-breadcumbs>
+
+      <!-- <app-progress></app-progress> -->
+      <router-outlet></router-outlet>
+      <!-- <app-grafica1></app-grafica1> -->
+    </div>
+
+    <footer class="footer">
+      © 2017 Admin Pro by wrappixel.com
+  </footer>
+  </div>
+</div>
+

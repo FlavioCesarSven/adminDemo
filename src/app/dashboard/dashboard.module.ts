@@ -6,6 +6,7 @@ import { ProgressComponent } from './pages/progress/progress.component';
 import { Grafica1Component } from './pages/grafica1/grafica1.component';
 import { HomeComponent } from './pages/home/home.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
+import { AccountSettingsComponent } from './pages/account-settings/account-settings.component';
 
 import { FormsModule } from '@angular/forms';
 import { ComponentModule } from './components/component.module';
@@ -17,6 +18,7 @@ import { NgChartsModule } from 'ng2-charts';
     Grafica1Component,
     HomeComponent,
     InicioComponent,
+    AccountSettingsComponent,
   ],
   imports: [
     CommonModule,
@@ -24,7 +26,7 @@ import { NgChartsModule } from 'ng2-charts';
     DashboardRoutingModule,
     FormsModule,
     ComponentModule,
-    NgChartsModule
+    NgChartsModule,
 
   ],exports:[
     SharedModule,

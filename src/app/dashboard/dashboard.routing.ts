@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { Grafica1Component } from './pages/grafica1/grafica1.component';
 import { ProgressComponent } from './pages/progress/progress.component';
+import { AccountSettingsComponent } from './pages/account-settings/account-settings.component';
 
 
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
     {path: 'inicio', component: InicioComponent },
     {path: 'progress', component: ProgressComponent },
     {path: 'grafica1', component: Grafica1Component },
+    {path: 'setting', component: AccountSettingsComponent },
     {path: '**', redirectTo: 'inicio', pathMatch:'full'},
   ]},
 
