@@ -10,10 +10,10 @@ import { AccountSettingsComponent } from './pages/account-settings/account-setti
 const routes: Routes = [
 
   {path:'', component: HomeComponent, children: [
-    {path: 'inicio', component: InicioComponent },
-    {path: 'progress', component: ProgressComponent },
-    {path: 'grafica1', component: Grafica1Component },
-    {path: 'setting', component: AccountSettingsComponent },
+    {path: 'inicio', component: InicioComponent, data: {titulo: 'Inicio'}   },
+    {path: 'progress', component: ProgressComponent, data: { titulo: 'Progress'} },
+    {path: 'grafica1', component: Grafica1Component, data: { titulo: 'Grafica'} },
+    {path: 'setting', component: AccountSettingsComponent, data: { titulo: 'Configuración'} },
     {path: '**', redirectTo: 'inicio', pathMatch:'full'},
   ]},
 
